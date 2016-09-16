@@ -1,0 +1,13 @@
+<h1>Hello World</h1>
+
+#if($Dictionary.getWords().size() == 0)
+  <p>There are no words in your dictionary, add a word below</p>
+#else
+  <ul>
+  #foreach($word in $Dictionary.getWords())
+    <li><a href="/word/$word.getID()">$word.getWord()</a></li>
+  #end
+  </ul>
+#end
+
+<a href="/add-word">Add a Word!</a>

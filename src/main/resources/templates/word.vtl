@@ -1,0 +1,8 @@
+<h3>$word.getWord()</h3>
+<ul>
+#foreach($def in $word.getDefinitionsArray())
+  <li>$def.getDefinition()</li>
+#end
+</ul>
+<a href="/word/$word.getID()/add-def">Add a definition</a>
+<a href="/">Back to Dictionary</a>
