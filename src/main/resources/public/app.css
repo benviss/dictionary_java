@@ -1,0 +1,26 @@
+body {
+  font-family: fantasy;
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  text-align: center;
+}
+
+form {
+  width: 75%;
+  margin: auto;
+
+}
+
+ul {
+  list-style: none;
+}
+
+#word-list, #definition-list {
+
+}
