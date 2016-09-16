@@ -12,15 +12,15 @@ public class WordTest {
   @Test
   public void Word_addsDefinition_true() {
     Word newWord = new Word("Apple","what");
-    assertEquals("what", newWord.getDefinitionsArray().get(0));
+    assertEquals("what", newWord.getDefinitionsArray().get(0).getDefinition());
   }
   @Test
   public void Word_addsMultipleDefinitions_true() {
     Word newWord = new Word("Apple","A fruit");
     Definition newDef2 = new Definition("A fruit?");
     newWord.addDefinitions(newDef2);
-    assertEquals("A fruit", newWord.getDefinitionsArray().get(0));
-    assertEquals("A fruit?", newWord.getDefinitionsArray().get(1));
+    assertEquals("A fruit", newWord.getDefinitionsArray().get(0).getDefinition());
+    assertEquals("A fruit?", newWord.getDefinitionsArray().get(1).getDefinition());
   }
 
   @Test
